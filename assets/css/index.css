@@ -1,0 +1,31 @@
+#btnCustomer{
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+#btnItem{
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+#btnHome{
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+#btnOrder{
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.carousel-inner{
+    height: 37vw;
+}
