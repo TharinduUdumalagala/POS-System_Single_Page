@@ -162,22 +162,22 @@
                     <div class="col-8">
                         <div class="card-body bg-light border border-primary ">
                             <div class="mt-3">
-                                <input type="text" class="form-control" placeholder="Customer ID" aria-label="Customer ID">
+                                <input type="text" class="form-control" placeholder="Customer ID" aria-label="Customer ID" id="txtCustomerId">
                             </div>
                             <div class="mt-3">
-                                <input type="text" class="form-control" placeholder="Customer Name" aria-label="Customer Name">
+                                <input type="text" class="form-control" placeholder="Customer Name" aria-label="Customer Name" id="txtCustomerName">
                             </div>
                             <div class="mt-3">
-                                <input type="text" class="form-control"  placeholder="Address" aria-label="Address">
+                                <input type="text" class="form-control"  placeholder="Address" aria-label="Address" id="txtAddress">
                             </div>
                             <div class="mt-3">
-                                <input type="text" class="form-control" placeholder="Phone No" aria-label="Phone No">
+                                <input type="text" class="form-control" placeholder="Phone No" aria-label="Phone No" id="txtPhoneNo">
                             </div>
                             <div class="col mt-3">
-                                <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                                <input type="text" class="form-control" placeholder="Email" aria-label="Email" id="txtEmail">
                             </div>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
-                                <button class="btn btn-outline-primary me-md-2" type="button">SAVE</button>
+                                <button class="btn btn-outline-primary me-md-2" type="button" id="btnSaveCustomer">SAVE</button>
                                 <button class="btn btn-outline-primary" type="button">UPDATE</button>
                                 <button class="btn btn-outline-primary" type="button">DELETE</button>
                             </div>
@@ -207,35 +207,7 @@
                                 <th scope="col">Email</th>
                             </tr>
                             </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">#</th>
-                                <td>#</td>
-                                <td>#</td>
-                                <td>#</td>
-                                <td>#</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">#</th>
-                                <td>#</td>
-                                <td>#</td>
-                                <td>#</td>
-                                <td>#</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">#</th>
-                                <td>#</td>
-                                <td>#</td>
-                                <td>#</td>
-                                <td>#</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">#</th>
-                                <td>#</td>
-                                <td>#</td>
-                                <td>#</td>
-                                <td>#</td>
-                            </tr>
+                            <tbody id="tblCustomer">
                             </tbody>
                         </table>
                     </div>
@@ -262,33 +234,35 @@
                     <div class="col"></div>
                     <div class="col-8 ">
                         <div class="card-body bg-light border border-primary">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Brand Name</option>
-                                <option value="1">UnBrand</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                            <select class="form-select" aria-label="Default select example" id="cmbBrandName">
+                                <option selected>UnBrand</option>
+                                <option value="1">Dell</option>
+                                <option value="2">ASUS</option>
+                                <option value="3">Apple</option>
+                                <option value="3">Samsung</option>
+                                <option value="3">Apple</option>
                             </select>
                             <div class="row mt-1">
                                 <div class="mt-3">
-                                    <input type="text" class="form-control" placeholder="Code" aria-label="Code">
+                                    <input type="text" class="form-control" placeholder="Code" aria-label="Code" id="txtCode">
                                 </div>
                                 <div class="mt-3">
-                                    <input type="text" class="form-control" placeholder="Item Name" aria-label="Item Name">
+                                    <input type="text" class="form-control" placeholder="Item Name" aria-label="Item Name" id="txtItemName">
                                 </div>
                                 <div class="mt-3">
-                                    <input type="text" class="form-control" placeholder="Description" aria-label="Description">
+                                    <input type="text" class="form-control" placeholder="Description" aria-label="Description" id="txtDescription">
                                 </div>
                                 <div class="col mt-3">
-                                    <input type="text" class="form-control" placeholder="Number Of Pieces" aria-label="Number Of Pieces">
+                                    <input type="text" class="form-control" placeholder="Number Of Pieces" aria-label="Number Of Pieces" id="txtNumber">
                                 </div>
                                 <div class="col mt-3">
-                                    <input type="text" class="form-control" placeholder="Unit Price" aria-label="Unit Price">
+                                    <input type="text" class="form-control" placeholder="Unit Price" aria-label="Unit Price" id="txtUnitPrice">
                                 </div>
                                 <div class="col mt-3">
-                                    <input type="text" class="form-control" placeholder="Grand Total" aria-label="Grand Total">
+                                    <input type="text" class="form-control" placeholder="Grand Total" aria-label="Grand Total" id="txtGrandTotal" >
                                 </div>
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
-                                    <button class="btn btn-outline-primary me-md-2" type="button">SAVE</button>
+                                    <button class="btn btn-outline-primary me-md-2" type="button" id="btnSaveItem">SAVE</button>
                                     <button class="btn btn-outline-primary" type="button">UPDATE</button>
                                     <button class="btn btn-outline-primary" type="button">DELETE</button>
                                 </div>
@@ -322,16 +296,8 @@
 
                             </tr>
                             </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">#</th>
-                                <td>#</td>
-                                <td>#</td>
-                                <td>#</td>
-                                <td>#</td>
-                                <td>#</td>
-                                <td>#</td>
-                            </tr>
+                            <tbody id="tblItem">
+
                             </tbody>
                         </table>
                     </div>
@@ -454,23 +420,8 @@
                                             <th scope="col">Unit Price</th>
                                         </tr>
                                         </thead>
-                                        <tbody>
-                                        <tr>
-                                            <th scope="row">#</th>
-                                            <td>#</td>
-                                            <td>#</td>
-                                            <td>0.00</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">#</th>
-                                            <td>#</td>
-                                            <td>#</td>
-                                            <td>0.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3">Grand Total</td>
-                                            <td>0.00</td>
-                                        </tr>
+                                        <tbody id="tblOrderItem">
+
                                         </tbody>
                                     </table>
                                 </div>
@@ -483,6 +434,7 @@
         </article>
     </section>
 </body>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
 <script src="assets/js/index.js"></script>
 <script src="assets/js/bootstrap.js"></script>
 </html>
