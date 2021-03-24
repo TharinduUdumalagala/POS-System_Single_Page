@@ -70,7 +70,7 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="assets/img/pexels-pixabay-356056%20(3).jpg" class="d-block w-100" alt="...">
-                                </div>
+                                 </div>
                                 <div class="carousel-item">
                                     <img src="assets/img/pexels-jess-bailey-designs-788946.jpg" class="d-block w-100"
                                          alt="...">
@@ -253,7 +253,7 @@
                                     <input type="text" class="form-control" placeholder="Description" aria-label="Description" id="txtDescription">
                                 </div>
                                 <div class="col mt-3">
-                                    <input type="text" class="form-control" placeholder="Number Of Pieces" aria-label="Number Of Pieces" id="txtNumber">
+                                    <input type="text" class="form-control" placeholder="Number Of Pieces" aria-label="Number Of Pieces" id="txtQty">
                                 </div>
                                 <div class="col mt-3">
                                     <input type="text" class="form-control" placeholder="Unit Price" aria-label="Unit Price" id="txtUnitPrice">
@@ -330,10 +330,10 @@
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col mt-3">
-                                                    <input type="text" class="form-control" id="orderDate">
+                                                    <input type="text" class="form-control" id="orderDate" disabled>
                                                 </div>
                                                 <div class="col mt-3">
-                                                    <input type="text" class="form-control" placeholder="Order Id" aria-label="Order Id">
+                                                    <input type="text" class="form-control" placeholder="Order Id" aria-label="Order Id" id="orderId">
                                                 </div>
                                             </div>
                                         </div>
@@ -344,23 +344,20 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end  ">
-                                                        <a href="########" class="btn btn-outline-info col-12 col-xl-auto
+                                                        <a href="" class="btn btn-outline-info col-12 col-xl-auto
                                                 mt-2 mt-xl-0 ml-0 ml-xl-2" tabindex="-1" role="button"
                                                            aria-disabled="true">New Customer</a>
                                                     </div>
                                                     <div class="col">
                                                         <div class="form-group form-inline mt-3">
-                                                            <select class="form-select" aria-label="Default select example">
-                                                                <option selected>Customer Id</option>
-                                                                <option value="1"></option>
-                                                                <option value="2"></option>
-                                                                <option value="3"></option>
+                                                            <select class="form-select" aria-label="Default select example" id="cmbCustomer">
+                                                                <option>Customer Id</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                     <div class="col mt-3">
                                                         <input type="text" class="form-control" placeholder="Customer Name"
-                                                               aria-label="Customer Name">
+                                                               aria-label="Customer Name" id="orderCustomerName">
                                                     </div>
                                                 </div>
                                             </div>
@@ -380,16 +377,13 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col">
-                                                        <select class="form-select" aria-label="Default select example">
-                                                            <option selected>Code</option>
-                                                            <option value="1"></option>
-                                                            <option value="2"></option>
-                                                            <option value="3"></option>
+                                                        <select class="form-select" aria-label="Default select example" id="cmbItem">
+                                                            <option>Item Id</option>
                                                         </select>
                                                     </div>
                                                     <div class="col">
                                                         <input type="text" class="form-control" placeholder="Item Name"
-                                                               aria-label="Item Name">
+                                                               aria-label="Item Name" id="orderItemName">
                                                     </div>
                                                 </div>
                                                 <div class="row">
